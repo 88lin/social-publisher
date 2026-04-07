@@ -7,7 +7,7 @@
 </h1>
 
 <p align="center">
-  <strong>全平台社交媒体自动发布助手</strong>
+  <strong>全平台社交媒体自动发布助手 SKILL</strong>
   <br>
   闲鱼 · 小红书 · B站专栏 · 抖音图文
 </p>
