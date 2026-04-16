@@ -1,157 +1,228 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" width="1100" height="620">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0d1117"/>
-      <stop offset="100%" style="stop-color:#161b22"/>
+      <stop offset="0%" style="stop-color:#020817"/>
+      <stop offset="100%" style="stop-color:#0a0f1e"/>
     </linearGradient>
-    <!-- Card gradients -->
-    <linearGradient id="cardCenter" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1f2937"/>
-      <stop offset="100%" style="stop-color:#111827"/>
+    <linearGradient id="accentH" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
     </linearGradient>
-    <linearGradient id="cardPurple" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2d1b69"/>
-      <stop offset="100%" style="stop-color:#1e1040"/>
+    <!-- Layer card fills -->
+    <linearGradient id="layerTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b"/>
+      <stop offset="100%" style="stop-color:#0f0a2e"/>
     </linearGradient>
-    <linearGradient id="cardBlue" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0c2340"/>
-      <stop offset="100%" style="stop-color:#071628"/>
+    <linearGradient id="layerMid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c1a2e"/>
+      <stop offset="100%" style="stop-color:#060e1c"/>
     </linearGradient>
-    <linearGradient id="cardGreen" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0d2818"/>
-      <stop offset="100%" style="stop-color:#071810"/>
+    <linearGradient id="layerBot" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1f14"/>
+      <stop offset="100%" style="stop-color:#060f0a"/>
     </linearGradient>
-    <linearGradient id="cardRed" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2d0f0f"/>
-      <stop offset="100%" style="stop-color:#1a0808"/>
+    <linearGradient id="layerData" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0f2e"/>
+      <stop offset="100%" style="stop-color:#0d0618"/>
     </linearGradient>
-    <!-- Arrow gradient -->
-    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#a29bfe"/>
-      <stop offset="100%" style="stop-color:#74b9ff"/>
+    <!-- Module fills -->
+    <linearGradient id="modPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d1b69;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#1e1040;stop-opacity:0.6"/>
     </linearGradient>
-    <linearGradient id="arrowDown" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#a29bfe"/>
-      <stop offset="100%" style="stop-color:#74b9ff"/>
+    <linearGradient id="modBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c2340;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#071628;stop-opacity:0.6"/>
     </linearGradient>
-    <filter id="cardGlow">
-      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#a29bfe" flood-opacity="0.3"/>
+    <linearGradient id="modGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d2818;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#071810;stop-opacity:0.6"/>
+    </linearGradient>
+    <filter id="layerGlow">
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#6366f1" flood-opacity="0.2"/>
     </filter>
-    <filter id="centerGlow">
-      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#ffd93d" flood-opacity="0.4"/>
+    <filter id="modGlow">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#6366f1" flood-opacity="0.35"/>
     </filter>
-    <filter id="platformGlow">
-      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#4ecdc4" flood-opacity="0.35"/>
+    <filter id="cyanGlow">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#06b6d4" flood-opacity="0.35"/>
     </filter>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#a29bfe" opacity="0.8"/>
+    <filter id="greenGlow">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#10b981" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#6366f1" opacity="0.7"/>
     </marker>
-    <marker id="arrowheadDown" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#74b9ff" opacity="0.8"/>
+    <marker id="arrCyan" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#06b6d4" opacity="0.7"/>
+    </marker>
+    <marker id="arrGreen" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#10b981" opacity="0.7"/>
     </marker>
   </defs>
 
   <!-- Background -->
-  <rect width="1000" height="560" fill="url(#bg)" rx="16"/>
+  <rect width="1100" height="620" fill="url(#bg)" rx="16"/>
+
+  <!-- Top accent -->
+  <rect x="0" y="0" width="1100" height="3" rx="0" fill="url(#accentH)" opacity="0.9"/>
 
   <!-- Title -->
-  <text x="500" y="42" text-anchor="middle" font-family="'SF Pro Display', Arial, sans-serif" font-size="18" font-weight="700" fill="#e2e8f0" letter-spacing="2">SYSTEM ARCHITECTURE</text>
-  <rect x="380" y="50" width="240" height="1.5" rx="1" fill="url(#arrowGrad)" opacity="0.6"/>
+  <text x="550" y="38" text-anchor="middle" font-family="'SF Pro Display', Arial, sans-serif" font-size="14" font-weight="700" fill="#64748b" letter-spacing="4">AMPLIPOST  ·  SYSTEM ARCHITECTURE</text>
+  <rect x="350" y="46" width="400" height="1" fill="url(#accentH)" opacity="0.4"/>
 
-  <!-- ===== TOP LAYER: AI Agent ===== -->
-  <!-- Center orchestrator card -->
-  <rect x="350" y="75" width="300" height="90" rx="14" fill="url(#cardCenter)" filter="url(#centerGlow)"/>
-  <rect x="350" y="75" width="300" height="90" rx="14" fill="none" stroke="#ffd93d" stroke-width="1.5" opacity="0.7"/>
-  <!-- Icon circle -->
-  <circle cx="410" cy="120" r="24" fill="#ffd93d" opacity="0.12"/>
-  <text x="410" y="128" text-anchor="middle" font-size="26">🤖</text>
-  <!-- Text -->
-  <text x="510" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#ffd93d">AI Agent 调度中心</text>
-  <text x="510" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">OpenClaw · LLM 内容生成 · 任务编排</text>
-  <text x="510" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">违禁词过滤 · 模板管理 · 日志追踪</text>
+  <!-- ============================================================ -->
+  <!-- LAYER 1: 内容中台 (Content Hub) -->
+  <!-- ============================================================ -->
+  <rect x="40" y="65" width="1020" height="130" rx="12" fill="url(#layerTop)" filter="url(#layerGlow)"/>
+  <rect x="40" y="65" width="1020" height="130" rx="12" fill="none" stroke="#6366f1" stroke-width="1" opacity="0.4"/>
+  <!-- Layer label -->
+  <rect x="40" y="65" width="130" height="28" rx="12 0 8 0" fill="#6366f1" opacity="0.7"/>
+  <text x="105" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#e0e7ff" letter-spacing="1">内容中台</text>
 
-  <!-- ===== MIDDLE LAYER: Two engines ===== -->
-  <!-- Playwright card -->
-  <rect x="120" y="240" width="260" height="100" rx="14" fill="url(#cardBlue)" filter="url(#cardGlow)"/>
-  <rect x="120" y="240" width="260" height="100" rx="14" fill="none" stroke="#74b9ff" stroke-width="1.5" opacity="0.7"/>
-  <circle cx="175" cy="290" r="22" fill="#74b9ff" opacity="0.12"/>
-  <text x="175" y="298" text-anchor="middle" font-size="22">🌐</text>
-  <text x="295" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#74b9ff">Playwright</text>
-  <text x="295" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">真实浏览器自动化</text>
-  <text x="295" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Cookie 持久化 · 模拟人工操作</text>
-  <text x="295" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">零风控检测</text>
+  <!-- Module: LLM 内容引擎 -->
+  <rect x="65" y="105" width="190" height="72" rx="10" fill="url(#modPurple)" filter="url(#modGlow)"/>
+  <rect x="65" y="105" width="190" height="72" rx="10" fill="none" stroke="#8b5cf6" stroke-width="1.2" opacity="0.7"/>
+  <text x="160" y="128" text-anchor="middle" font-size="18">🤖</text>
+  <text x="160" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#c4b5fd">LLM 内容引擎</text>
+  <text x="160" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">标题 · 正文 · 话题标签</text>
 
-  <!-- Scrapling card -->
-  <rect x="620" y="240" width="260" height="100" rx="14" fill="url(#cardPurple)" filter="url(#cardGlow)"/>
-  <rect x="620" y="240" width="260" height="100" rx="14" fill="none" stroke="#a29bfe" stroke-width="1.5" opacity="0.7"/>
-  <circle cx="675" cy="290" r="22" fill="#a29bfe" opacity="0.12"/>
-  <text x="675" y="298" text-anchor="middle" font-size="22">🕷️</text>
-  <text x="795" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#a29bfe">Scrapling</text>
-  <text x="795" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">反爬预检 · 自适应选择器</text>
-  <text x="795" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">StealthyFetcher · 增强重试</text>
-  <text x="795" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">JS 降级兜底</text>
+  <!-- Module: AI 配图生成 -->
+  <rect x="275" y="105" width="190" height="72" rx="10" fill="url(#modPurple)" filter="url(#modGlow)"/>
+  <rect x="275" y="105" width="190" height="72" rx="10" fill="none" stroke="#8b5cf6" stroke-width="1.2" opacity="0.7"/>
+  <text x="370" y="128" text-anchor="middle" font-size="18">🎨</text>
+  <text x="370" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#c4b5fd">AI 配图生成</text>
+  <text x="370" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">封面图 · 商品图 · 配图</text>
 
-  <!-- ===== BOTTOM LAYER: 4 platforms ===== -->
+  <!-- Module: 违禁词过滤 -->
+  <rect x="485" y="105" width="190" height="72" rx="10" fill="url(#modPurple)" filter="url(#modGlow)"/>
+  <rect x="485" y="105" width="190" height="72" rx="10" fill="none" stroke="#8b5cf6" stroke-width="1.2" opacity="0.7"/>
+  <text x="580" y="128" text-anchor="middle" font-size="18">🛡️</text>
+  <text x="580" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#c4b5fd">违禁词过滤</text>
+  <text x="580" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">内置词库 · 自动替换</text>
+
+  <!-- Module: 模板管理 -->
+  <rect x="695" y="105" width="190" height="72" rx="10" fill="url(#modPurple)" filter="url(#modGlow)"/>
+  <rect x="695" y="105" width="190" height="72" rx="10" fill="none" stroke="#8b5cf6" stroke-width="1.2" opacity="0.7"/>
+  <text x="790" y="128" text-anchor="middle" font-size="18">📋</text>
+  <text x="790" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#c4b5fd">模板管理</text>
+  <text x="790" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">7+ 发布模板 · 自定义</text>
+
+  <!-- Module: 任务编排 -->
+  <rect x="895" y="105" width="140" height="72" rx="10" fill="url(#modPurple)" filter="url(#modGlow)"/>
+  <rect x="895" y="105" width="140" height="72" rx="10" fill="none" stroke="#8b5cf6" stroke-width="1.2" opacity="0.7"/>
+  <text x="965" y="128" text-anchor="middle" font-size="18">⚙️</text>
+  <text x="965" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#c4b5fd">任务编排</text>
+  <text x="965" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">调度 · 队列 · 重试</text>
+
+  <!-- ============================================================ -->
+  <!-- Arrow Layer 1 → Layer 2 -->
+  <!-- ============================================================ -->
+  <line x1="550" y1="195" x2="550" y2="228" stroke="#6366f1" stroke-width="2" stroke-dasharray="5,3" opacity="0.6" marker-end="url(#arr)"/>
+
+  <!-- ============================================================ -->
+  <!-- LAYER 2: 投放引擎 (Distribution Engine) -->
+  <!-- ============================================================ -->
+  <rect x="40" y="228" width="1020" height="130" rx="12" fill="url(#layerMid)" filter="url(#cyanGlow)"/>
+  <rect x="40" y="228" width="1020" height="130" rx="12" fill="none" stroke="#06b6d4" stroke-width="1" opacity="0.4"/>
+  <rect x="40" y="228" width="130" height="28" rx="12 0 8 0" fill="#0891b2" opacity="0.7"/>
+  <text x="105" y="246" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#cffafe" letter-spacing="1">投放引擎</text>
+
+  <!-- Module: Playwright 浏览器 -->
+  <rect x="65" y="268" width="230" height="72" rx="10" fill="url(#modBlue)" filter="url(#cyanGlow)"/>
+  <rect x="65" y="268" width="230" height="72" rx="10" fill="none" stroke="#06b6d4" stroke-width="1.2" opacity="0.7"/>
+  <text x="180" y="291" text-anchor="middle" font-size="18">🌐</text>
+  <text x="180" y="311" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#67e8f9">Playwright 浏览器引擎</text>
+  <text x="180" y="328" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">真实操作 · Cookie 持久化 · 零风控</text>
+
+  <!-- Module: Scrapling 反爬 -->
+  <rect x="315" y="268" width="230" height="72" rx="10" fill="url(#modBlue)" filter="url(#cyanGlow)"/>
+  <rect x="315" y="268" width="230" height="72" rx="10" fill="none" stroke="#06b6d4" stroke-width="1.2" opacity="0.7"/>
+  <text x="430" y="291" text-anchor="middle" font-size="18">🕷️</text>
+  <text x="430" y="311" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#67e8f9">Scrapling 反爬引擎</text>
+  <text x="430" y="328" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">预检 · 自适应选择器 · JS 降级</text>
+
+  <!-- Module: 登录态管理 -->
+  <rect x="565" y="268" width="190" height="72" rx="10" fill="url(#modBlue)" filter="url(#cyanGlow)"/>
+  <rect x="565" y="268" width="190" height="72" rx="10" fill="none" stroke="#06b6d4" stroke-width="1.2" opacity="0.7"/>
+  <text x="660" y="291" text-anchor="middle" font-size="18">🔐</text>
+  <text x="660" y="311" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#67e8f9">登录态管理</text>
+  <text x="660" y="328" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">多账号 · Session 复用</text>
+
+  <!-- Module: 发布调度 -->
+  <rect x="775" y="268" width="260" height="72" rx="10" fill="url(#modBlue)" filter="url(#cyanGlow)"/>
+  <rect x="775" y="268" width="260" height="72" rx="10" fill="none" stroke="#06b6d4" stroke-width="1.2" opacity="0.7"/>
+  <text x="905" y="291" text-anchor="middle" font-size="18">📡</text>
+  <text x="905" y="311" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#67e8f9">发布调度器</text>
+  <text x="905" y="328" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">定时发布 · 并发控制 · 失败重试</text>
+
+  <!-- ============================================================ -->
+  <!-- Arrow Layer 2 → Layer 3 -->
+  <!-- ============================================================ -->
+  <line x1="550" y1="358" x2="550" y2="391" stroke="#06b6d4" stroke-width="2" stroke-dasharray="5,3" opacity="0.6" marker-end="url(#arrCyan)"/>
+
+  <!-- ============================================================ -->
+  <!-- LAYER 3: 平台矩阵 (Platform Matrix) -->
+  <!-- ============================================================ -->
+  <rect x="40" y="391" width="1020" height="120" rx="12" fill="url(#layerBot)" filter="url(#greenGlow)"/>
+  <rect x="40" y="391" width="1020" height="120" rx="12" fill="none" stroke="#10b981" stroke-width="1" opacity="0.35"/>
+  <rect x="40" y="391" width="130" height="28" rx="12 0 8 0" fill="#059669" opacity="0.7"/>
+  <text x="105" y="409" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#d1fae5" letter-spacing="1">平台矩阵</text>
+
   <!-- 闲鱼 -->
-  <rect x="60" y="420" width="170" height="100" rx="12" fill="url(#cardRed)" filter="url(#platformGlow)"/>
-  <rect x="60" y="420" width="170" height="100" rx="12" fill="none" stroke="#ff6b6b" stroke-width="1.5" opacity="0.7"/>
-  <text x="145" y="452" text-anchor="middle" font-size="22">🐟</text>
-  <text x="145" y="474" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#ff6b6b">闲鱼</text>
-  <text x="145" y="492" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">AI 配图 · 商品发布</text>
-  <text x="145" y="508" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">违禁词过滤</text>
+  <rect x="65" y="430" width="210" height="64" rx="10" fill="#1a0a0a" filter="url(#modGlow)"/>
+  <rect x="65" y="430" width="210" height="64" rx="10" fill="none" stroke="#f43f5e" stroke-width="1.2" opacity="0.6"/>
+  <text x="170" y="453" text-anchor="middle" font-size="16">🐟</text>
+  <text x="170" y="472" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="12" font-weight="700" fill="#fda4af">闲鱼</text>
+  <text x="170" y="487" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">商品发布 · AI 配图</text>
 
   <!-- 小红书 -->
-  <rect x="260" y="420" width="170" height="100" rx="12" fill="url(#cardRed)" filter="url(#platformGlow)"/>
-  <rect x="260" y="420" width="170" height="100" rx="12" fill="none" stroke="#ff4757" stroke-width="1.5" opacity="0.7"/>
-  <text x="345" y="452" text-anchor="middle" font-size="22">📕</text>
-  <text x="345" y="474" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#ff4757">小红书</text>
-  <text x="345" y="492" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">爆款标题 · 话题标签</text>
-  <text x="345" y="508" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">图文上传</text>
+  <rect x="295" y="430" width="210" height="64" rx="10" fill="#1a0a0a" filter="url(#modGlow)"/>
+  <rect x="295" y="430" width="210" height="64" rx="10" fill="none" stroke="#f43f5e" stroke-width="1.2" opacity="0.6"/>
+  <text x="400" y="453" text-anchor="middle" font-size="16">📕</text>
+  <text x="400" y="472" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="12" font-weight="700" fill="#fda4af">小红书</text>
+  <text x="400" y="487" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">图文笔记 · 爆款标题</text>
 
   <!-- B站 -->
-  <rect x="570" y="420" width="170" height="100" rx="12" fill="url(#cardBlue)" filter="url(#platformGlow)"/>
-  <rect x="570" y="420" width="170" height="100" rx="12" fill="none" stroke="#4ecdc4" stroke-width="1.5" opacity="0.7"/>
-  <text x="655" y="452" text-anchor="middle" font-size="22">📺</text>
-  <text x="655" y="474" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#4ecdc4">B站专栏</text>
-  <text x="655" y="492" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">深度文章 · 自动排版</text>
-  <text x="655" y="508" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">草稿管理</text>
+  <rect x="525" y="430" width="210" height="64" rx="10" fill="#0a0f1a" filter="url(#cyanGlow)"/>
+  <rect x="525" y="430" width="210" height="64" rx="10" fill="none" stroke="#06b6d4" stroke-width="1.2" opacity="0.6"/>
+  <text x="630" y="453" text-anchor="middle" font-size="16">📺</text>
+  <text x="630" y="472" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="12" font-weight="700" fill="#67e8f9">B站专栏</text>
+  <text x="630" y="487" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">深度文章 · 自动排版</text>
 
   <!-- 抖音 -->
-  <rect x="770" y="420" width="170" height="100" rx="12" fill="url(#cardPurple)" filter="url(#platformGlow)"/>
-  <rect x="770" y="420" width="170" height="100" rx="12" fill="none" stroke="#a29bfe" stroke-width="1.5" opacity="0.7"/>
-  <text x="855" y="452" text-anchor="middle" font-size="22">🎵</text>
-  <text x="855" y="474" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#a29bfe">抖音图文</text>
-  <text x="855" y="492" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">短平快图文 · AI 配图</text>
-  <text x="855" y="508" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">创作者中心直发</text>
+  <rect x="755" y="430" width="210" height="64" rx="10" fill="#0f0a1a" filter="url(#modGlow)"/>
+  <rect x="755" y="430" width="210" height="64" rx="10" fill="none" stroke="#8b5cf6" stroke-width="1.2" opacity="0.6"/>
+  <text x="860" y="453" text-anchor="middle" font-size="16">🎵</text>
+  <text x="860" y="472" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="12" font-weight="700" fill="#c4b5fd">抖音图文</text>
+  <text x="860" y="487" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">短平快 · 创作者直发</text>
 
-  <!-- ===== ARROWS ===== -->
-  <!-- AI Agent → Playwright (left diagonal) -->
-  <line x1="420" y1="165" x2="280" y2="240" stroke="#74b9ff" stroke-width="1.8" stroke-dasharray="6,3" opacity="0.7" marker-end="url(#arrowheadDown)"/>
-  <!-- AI Agent → Scrapling (right diagonal) -->
-  <line x1="580" y1="165" x2="720" y2="240" stroke="#a29bfe" stroke-width="1.8" stroke-dasharray="6,3" opacity="0.7" marker-end="url(#arrowheadDown)"/>
+  <!-- ============================================================ -->
+  <!-- Arrow Layer 3 → Layer 4 (data return) -->
+  <!-- ============================================================ -->
+  <!-- Return arrow on right side -->
+  <path d="M 1060 462 Q 1090 462 1090 380 Q 1090 298 1060 298" fill="none" stroke="#10b981" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.5" marker-end="url(#arrGreen)"/>
+  <text x="1095" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#10b981" transform="rotate(90, 1095, 385)">数据回流</text>
 
-  <!-- Playwright → 闲鱼 -->
-  <line x1="185" y1="340" x2="155" y2="420" stroke="#ff6b6b" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.6" marker-end="url(#arrowheadDown)"/>
-  <!-- Playwright → 小红书 -->
-  <line x1="235" y1="340" x2="330" y2="420" stroke="#ff4757" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.6" marker-end="url(#arrowheadDown)"/>
-  <!-- Scrapling → B站 -->
-  <line x1="680" y1="340" x2="660" y2="420" stroke="#4ecdc4" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.6" marker-end="url(#arrowheadDown)"/>
-  <!-- Scrapling → 抖音 -->
-  <line x1="750" y1="340" x2="840" y2="420" stroke="#a29bfe" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.6" marker-end="url(#arrowheadDown)"/>
+  <!-- ============================================================ -->
+  <!-- LAYER 4: 数据层 (Data Layer) - bottom strip -->
+  <!-- ============================================================ -->
+  <rect x="40" y="530" width="1020" height="60" rx="12" fill="url(#layerData)"/>
+  <rect x="40" y="530" width="1020" height="60" rx="12" fill="none" stroke="#8b5cf6" stroke-width="1" opacity="0.3"/>
+  <rect x="40" y="530" width="130" height="28" rx="12 0 8 0" fill="#7c3aed" opacity="0.6"/>
+  <text x="105" y="548" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#ede9fe" letter-spacing="1">数据层</text>
 
-  <!-- Playwright ↔ Scrapling (bidirectional) -->
-  <line x1="380" y1="290" x2="620" y2="290" stroke="url(#arrowGrad)" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.5"/>
-  <text x="500" y="284" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">协同增强</text>
+  <!-- Data modules inline -->
+  <text x="260" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#a78bfa">📊 发布日志</text>
+  <line x1="340" y1="555" x2="340" y2="575" stroke="#334155" stroke-width="1"/>
+  <text x="450" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#a78bfa">🍪 Cookie 存储</text>
+  <line x1="540" y1="555" x2="540" y2="575" stroke="#334155" stroke-width="1"/>
+  <text x="650" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#a78bfa">📁 内容归档</text>
+  <line x1="740" y1="555" x2="740" y2="575" stroke="#334155" stroke-width="1"/>
+  <text x="850" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#a78bfa">📈 效果追踪</text>
+  <line x1="940" y1="555" x2="940" y2="575" stroke="#334155" stroke-width="1"/>
+  <text x="1010" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#a78bfa">⚠️ 异常告警</text>
 
-  <!-- Layer labels -->
-  <text x="28" y="130" font-family="Arial, sans-serif" font-size="10" fill="#64748b" transform="rotate(-90, 28, 130)">ORCHESTRATION</text>
-  <text x="28" y="310" font-family="Arial, sans-serif" font-size="10" fill="#64748b" transform="rotate(-90, 28, 310)">ENGINE LAYER</text>
-  <text x="28" y="490" font-family="Arial, sans-serif" font-size="10" fill="#64748b" transform="rotate(-90, 28, 490)">PLATFORMS</text>
-
-  <!-- Layer separator lines -->
-  <line x1="50" y1="210" x2="950" y2="210" stroke="#1e293b" stroke-width="1" stroke-dasharray="3,6" opacity="0.8"/>
-  <line x1="50" y1="390" x2="950" y2="390" stroke="#1e293b" stroke-width="1" stroke-dasharray="3,6" opacity="0.8"/>
-
-  <!-- Bottom border accent -->
-  <rect x="0" y="553" width="1000" height="7" rx="0 0 16 16" fill="url(#arrowGrad)" opacity="0.5"/>
+  <!-- Bottom accent -->
+  <rect x="0" y="613" width="1100" height="7" rx="0 0 16 16" fill="url(#accentH)" opacity="0.6"/>
 </svg>

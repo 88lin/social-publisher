@@ -1,92 +1,101 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 220" width="1000" height="220">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#0d1117"/>
-      <stop offset="100%" style="stop-color:#161b22"/>
+      <stop offset="0%" style="stop-color:#020817"/>
+      <stop offset="100%" style="stop-color:#0a0f1e"/>
     </linearGradient>
-    <linearGradient id="step1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1040"/>
-      <stop offset="100%" style="stop-color:#0d0820"/>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
     </linearGradient>
-    <linearGradient id="step2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0c2340"/>
-      <stop offset="100%" style="stop-color:#071628"/>
+    <linearGradient id="s1fill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d1b69;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#1e1040;stop-opacity:0.5"/>
     </linearGradient>
-    <linearGradient id="step3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0d2818"/>
-      <stop offset="100%" style="stop-color:#071810"/>
+    <linearGradient id="s2fill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c2340;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#071628;stop-opacity:0.5"/>
     </linearGradient>
-    <linearGradient id="step4" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2d1b00"/>
-      <stop offset="100%" style="stop-color:#1a1000"/>
+    <linearGradient id="s3fill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d2818;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#071810;stop-opacity:0.5"/>
     </linearGradient>
-    <filter id="glow1"><feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#a29bfe" flood-opacity="0.4"/></filter>
-    <filter id="glow2"><feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#74b9ff" flood-opacity="0.4"/></filter>
-    <filter id="glow3"><feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#4ecdc4" flood-opacity="0.4"/></filter>
-    <filter id="glow4"><feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#ffd93d" flood-opacity="0.4"/></filter>
+    <linearGradient id="s4fill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d1b00;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#1a1000;stop-opacity:0.5"/>
+    </linearGradient>
+    <filter id="g1"><feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#8b5cf6" flood-opacity="0.4"/></filter>
+    <filter id="g2"><feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#06b6d4" flood-opacity="0.4"/></filter>
+    <filter id="g3"><feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#10b981" flood-opacity="0.4"/></filter>
+    <filter id="g4"><feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#f59e0b" flood-opacity="0.4"/></filter>
     <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
-      <polygon points="0 0, 8 3, 0 6" fill="#475569"/>
+      <polygon points="0 0, 8 3, 0 6" fill="#334155"/>
     </marker>
   </defs>
 
-  <rect width="900" height="200" fill="url(#bg)" rx="12"/>
+  <rect width="1000" height="220" fill="url(#bg)" rx="14"/>
+  <rect x="0" y="0" width="1000" height="3" fill="url(#accent)" opacity="0.8"/>
 
   <!-- Title -->
-  <text x="450" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#94a3b8" letter-spacing="3">SCRAPLING ENHANCED PIPELINE</text>
+  <text x="500" y="32" text-anchor="middle" font-family="'SF Pro Display', Arial, sans-serif" font-size="12" font-weight="700" fill="#475569" letter-spacing="4">SCRAPLING  ENHANCED  PIPELINE</text>
 
   <!-- Step 1 -->
-  <rect x="40" y="55" width="170" height="110" rx="10" fill="url(#step1)" filter="url(#glow1)"/>
-  <rect x="40" y="55" width="170" height="110" rx="10" fill="none" stroke="#a29bfe" stroke-width="1.5" opacity="0.7"/>
-  <text x="125" y="82" text-anchor="middle" font-size="20">🔍</text>
-  <text x="125" y="104" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#a29bfe">Step 1 · 页面预检</text>
-  <text x="125" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">StealthyFetcher</text>
-  <text x="125" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">反爬检测 + 可访问性</text>
-  <text x="125" y="154" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">验证目标页面状态</text>
+  <rect x="40" y="55" width="195" height="130" rx="12" fill="url(#s1fill)" filter="url(#g1)"/>
+  <rect x="40" y="55" width="195" height="130" rx="12" fill="none" stroke="#8b5cf6" stroke-width="1.5" opacity="0.7"/>
+  <!-- Step number -->
+  <rect x="40" y="55" width="40" height="24" rx="12 0 8 0" fill="#8b5cf6" opacity="0.7"/>
+  <text x="60" y="71" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="800" fill="#ede9fe">01</text>
+  <text x="137" y="100" text-anchor="middle" font-size="22">🔍</text>
+  <text x="137" y="122" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="13" font-weight="700" fill="#c4b5fd">页面预检</text>
+  <text x="137" y="142" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">StealthyFetcher</text>
+  <text x="137" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">反爬状态检测</text>
+  <text x="137" y="174" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#475569">验证目标可访问性</text>
 
   <!-- Arrow 1→2 -->
-  <line x1="210" y1="110" x2="250" y2="110" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="235" y1="120" x2="268" y2="120" stroke="#334155" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="251" y="113" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#475569">通过</text>
 
   <!-- Step 2 -->
-  <rect x="250" y="55" width="170" height="110" rx="10" fill="url(#step2)" filter="url(#glow2)"/>
-  <rect x="250" y="55" width="170" height="110" rx="10" fill="none" stroke="#74b9ff" stroke-width="1.5" opacity="0.7"/>
-  <text x="335" y="82" text-anchor="middle" font-size="20">🌐</text>
-  <text x="335" y="104" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#74b9ff">Step 2 · 浏览器执行</text>
-  <text x="335" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Playwright 自动化</text>
-  <text x="335" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">真实操作 · 表单填写</text>
-  <text x="335" y="154" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">模拟人工发布流程</text>
+  <rect x="268" y="55" width="195" height="130" rx="12" fill="url(#s2fill)" filter="url(#g2)"/>
+  <rect x="268" y="55" width="195" height="130" rx="12" fill="none" stroke="#06b6d4" stroke-width="1.5" opacity="0.7"/>
+  <rect x="268" y="55" width="40" height="24" rx="12 0 8 0" fill="#0891b2" opacity="0.7"/>
+  <text x="288" y="71" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="800" fill="#cffafe">02</text>
+  <text x="365" y="100" text-anchor="middle" font-size="22">🌐</text>
+  <text x="365" y="122" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="13" font-weight="700" fill="#67e8f9">浏览器执行</text>
+  <text x="365" y="142" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Playwright 自动化</text>
+  <text x="365" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">模拟真人操作</text>
+  <text x="365" y="174" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#475569">表单填写 · 文件上传</text>
 
   <!-- Arrow 2→3 -->
-  <line x1="420" y1="110" x2="460" y2="110" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="463" y1="120" x2="496" y2="120" stroke="#334155" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="479" y="113" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#475569">执行</text>
 
   <!-- Step 3 -->
-  <rect x="460" y="55" width="170" height="110" rx="10" fill="url(#step3)" filter="url(#glow3)"/>
-  <rect x="460" y="55" width="170" height="110" rx="10" fill="none" stroke="#4ecdc4" stroke-width="1.5" opacity="0.7"/>
-  <text x="545" y="82" text-anchor="middle" font-size="20">🎯</text>
-  <text x="545" y="104" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#4ecdc4">Step 3 · 自适应选择</text>
-  <text x="545" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">find_similar 降级</text>
-  <text x="545" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">多方法容错解析</text>
-  <text x="545" y="154" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">网站变更自动适配</text>
+  <rect x="496" y="55" width="195" height="130" rx="12" fill="url(#s3fill)" filter="url(#g3)"/>
+  <rect x="496" y="55" width="195" height="130" rx="12" fill="none" stroke="#10b981" stroke-width="1.5" opacity="0.7"/>
+  <rect x="496" y="55" width="40" height="24" rx="12 0 8 0" fill="#059669" opacity="0.7"/>
+  <text x="516" y="71" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="800" fill="#d1fae5">03</text>
+  <text x="593" y="100" text-anchor="middle" font-size="22">🎯</text>
+  <text x="593" y="122" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="13" font-weight="700" fill="#6ee7b7">自适应选择</text>
+  <text x="593" y="142" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">find_similar 降级</text>
+  <text x="593" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">多方法容错解析</text>
+  <text x="593" y="174" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#475569">网站改版自动适配</text>
 
   <!-- Arrow 3→4 -->
-  <line x1="630" y1="110" x2="670" y2="110" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="691" y1="120" x2="724" y2="120" stroke="#334155" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="707" y="113" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#475569">完成</text>
 
   <!-- Step 4 -->
-  <rect x="670" y="55" width="190" height="110" rx="10" fill="url(#step4)" filter="url(#glow4)"/>
-  <rect x="670" y="55" width="190" height="110" rx="10" fill="none" stroke="#ffd93d" stroke-width="1.5" opacity="0.7"/>
-  <text x="765" y="82" text-anchor="middle" font-size="20">🛡️</text>
-  <text x="765" y="104" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#ffd93d">Step 4 · 增强容错</text>
-  <text x="765" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">条件等待 + 自动重试</text>
-  <text x="765" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">JS 降级兜底方案</text>
-  <text x="765" y="154" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">详细日志 · 异常上报</text>
+  <rect x="724" y="55" width="236" height="130" rx="12" fill="url(#s4fill)" filter="url(#g4)"/>
+  <rect x="724" y="55" width="236" height="130" rx="12" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.7"/>
+  <rect x="724" y="55" width="40" height="24" rx="12 0 8 0" fill="#d97706" opacity="0.7"/>
+  <text x="744" y="71" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="800" fill="#fef3c7">04</text>
+  <text x="842" y="100" text-anchor="middle" font-size="22">🛡️</text>
+  <text x="842" y="122" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="13" font-weight="700" fill="#fcd34d">增强容错</text>
+  <text x="842" y="142" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">条件等待 + 自动重试</text>
+  <text x="842" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">JS 降级兜底方案</text>
+  <text x="842" y="174" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#475569">详细日志 · 异常上报</text>
 
   <!-- Bottom accent -->
-  <rect x="0" y="194" width="900" height="6" rx="0 0 12 12">
-    <linearGradient id="bottomLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#a29bfe;stop-opacity:0"/>
-      <stop offset="25%" style="stop-color:#a29bfe"/>
-      <stop offset="75%" style="stop-color:#ffd93d"/>
-      <stop offset="100%" style="stop-color:#ffd93d;stop-opacity:0"/>
-    </linearGradient>
-  </rect>
-  <rect x="0" y="194" width="900" height="6" rx="0" fill="url(#bottomLine)" opacity="0.5"/>
+  <rect x="0" y="214" width="1000" height="6" rx="0 0 14 14" fill="url(#accent)" opacity="0.5"/>
 </svg>
