@@ -1,62 +1,60 @@
-<p align="center">
-  <img src="https://img.freepik.com/free-vector/social-media-apps-concept-illustration_114360-1908.jpg?w=1200" width="100%" alt="Social Publisher Banner"/>
-</p>
+<div align="center">
 
-<h1 align="center">
-  🚀 Social Publisher
-</h1>
+![Social Publisher Banner](./banner.svg)
 
-<p align="center">
-  <strong>全平台社交媒体自动发布助手 SKILL</strong>
-  <br>
-  闲鱼 · 小红书 · B站专栏 · 抖音图文
-</p>
+<br>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Platform-闲鱼-brightgreen?style=flat-square&logo=rocket" />
-  <img src="https://img.shields.io/badge/Platform-小红书-red?style=flat-square&logo=heart" />
-  <img src="https://img.shields.io/badge/Platform-B站-cyan?style=flat-square&logo=video" />
-  <img src="https://img.shields.io/badge/Platform-抖音-black?style=flat-square&logo=tiktok" />
-  <img src="https://img.shields.io/badge/Scrapling-Enhanced-blue?style=flat-square&logo=lightning" />
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" />
-</p>
+[![License](https://img.shields.io/badge/License-MIT-ffd93d?style=flat-square)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.9+-74b9ff?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![Playwright](https://img.shields.io/badge/Playwright-Latest-4ecdc4?style=flat-square&logo=playwright&logoColor=white)](https://playwright.dev)
+[![Scrapling](https://img.shields.io/badge/Scrapling-0.4.3+-a29bfe?style=flat-square)](https://github.com/D4Vinci/Scrapling)
+[![OpenClaw](https://img.shields.io/badge/OpenClaw-AI_Agent-ff6b6b?style=flat-square)](https://openclaw.ai)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
+
+<br>
+
+**Social Publisher** 是一款由 AI 驱动的全平台社交媒体自动发布助手，支持闲鱼、小红书、B站专栏、抖音图文四大平台一键发布。内置 Scrapling 反爬增强层，配合 Playwright 真实浏览器自动化，实现零风控、高鲁棒的内容分发。
+
+<br>
+
+[快速开始](#-快速开始) · [平台支持](#-平台支持) · [技术架构](#-技术架构) · [Scrapling 增强](#-scrapling-增强技术) · [项目结构](#-项目结构) · [故障排查](#-故障排查)
+
+</div>
 
 ---
 
-## ✨ 它能做什么？
+## ✨ 核心特性
 
 <table>
 <tr>
-<td width="25%">
+<td width="50%">
 
-### 🐟 闲鱼发布
-<img src="https://img.icons8.com/color/48/000000/aliexpress.png" width="32"/>
+**🤖 AI 全程驱动**
 
-AI 生成商品配图 · 自动发布 · 违禁词过滤 · 登录态持久化
-
-</td>
-<td width="25%">
-
-### 📕 小红书
-<img src="https://img.icons8.com/color/48/000000_instagram-logo.png" width="32"/>
-
-文字配图模式 · 上传图片 · 爆款标题 · 话题标签
+由 OpenClaw LLM 自动生成标题、正文、话题标签，并智能生成配图。内置违禁词过滤词库，发布前自动替换敏感词，无需人工审核。
 
 </td>
-<td width="25%">
+<td width="50%">
 
-### 📺 B站专栏
-<img src="https://img.icons8.com/color/48/000000 bilibili.png" width="32"/>
+**🕷️ Scrapling 反爬增强**
 
-800-1500字深度文章 · 自动排版 · 草稿管理
+每次发布前通过 StealthyFetcher 预检页面可访问性与反爬状态，自适应选择器在网站改版后自动降级适配，大幅提升长期稳定性。
 
 </td>
-<td width="25%">
+</tr>
+<tr>
+<td width="50%">
 
-### 🎵 抖音图文
-<img src="https://img.icons8.com/color/48/000000/tiktok.png" width="32"/>
+**🌐 真实浏览器操作**
 
-短平快图文 · AI配图 · 创作者中心直发
+基于 Playwright 模拟真人操作行为，Cookie 持久化存储，只需登录一次即可长期使用，规避平台风控检测。
+
+</td>
+<td width="50%">
+
+**📊 完整日志追踪**
+
+每次发布操作均记录完整日志，包含时间戳、操作步骤、异常信息，支持随时回溯排查，7+ 发货模板开箱即用。
 
 </td>
 </tr>
@@ -64,125 +62,128 @@ AI 生成商品配图 · 自动发布 · 违禁词过滤 · 登录态持久化
 
 ---
 
-## 🎯 快速开始
+## 🎯 平台支持
 
-### 1️⃣ 安装依赖
+<table>
+<tr>
+<th align="center" width="25%">🐟 闲鱼</th>
+<th align="center" width="25%">📕 小红书</th>
+<th align="center" width="25%">📺 B站专栏</th>
+<th align="center" width="25%">🎵 抖音图文</th>
+</tr>
+<tr>
+<td align="center">
+
+AI 生成商品配图<br>
+自动发布上架<br>
+违禁词过滤<br>
+登录态持久化<br>
+7+ 发货模板
+
+</td>
+<td align="center">
+
+文字配图模式<br>
+图片批量上传<br>
+爆款标题生成<br>
+话题标签推荐<br>
+Scrapling 增强 ✅
+
+</td>
+<td align="center">
+
+800–1500 字深度文章<br>
+自动排版格式化<br>
+草稿管理<br>
+封面图生成<br>
+专栏分类设置
+
+</td>
+<td align="center">
+
+短平快图文<br>
+AI 智能配图<br>
+创作者中心直发<br>
+话题挂载<br>
+定时发布支持
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🚀 快速开始
+
+### 安装依赖
 
 ```bash
-# OpenClaw
+# 安装 OpenClaw AI Agent
 npm install -g openclaw
 
-# agent-browser
+# 安装 Playwright 浏览器自动化
 npm install -g agent-browser
 agent-browser install
 
-# Scrapling（可选，增强反爬能力）
+# 安装 Scrapling 反爬增强（推荐）
 pip install "scrapling[all]>=0.4.3"
 scrapling install --force
 ```
 
-### 2️⃣ 一句话发布
+### 一句话发布
 
-```
+```bash
+# 闲鱼商品发布
 "帮我发布闲鱼：iPhone 15 Pro Max，5999元，95新"
-"发一篇小红书笔记：AI工具推荐"
-"写一篇B站专栏：技术干货分享"
-"发布抖音图文：生活小技巧"
+
+# 小红书笔记
+"发一篇小红书笔记：AI工具推荐，附上3张配图"
+
+# B站专栏文章
+"写一篇B站专栏：深度解析 Scrapling 反爬技术"
+
+# 抖音图文
+"发布抖音图文：5个提升效率的生活小技巧"
 ```
 
-### 3️⃣ 完成！ 🎉
+### 使用 Scrapling 增强版（推荐）
 
----
+```bash
+# 小红书增强版（已测试）
+python3 publishers/xhs-publisher/scripts/xhs_publish_scrapling.py \
+    --title "AI工具推荐" \
+    --content "今天分享5个超好用的AI工具..." \
+    --images ./images/cover.jpg
 
-## 🌟 核心优势
-
-| 特性 | 说明 |
-|------|------|
-| 🤖 **AI 驱动** | GPT/LLM 自动生成内容，配图也智能 |
-| 🕷️ **Scrapling 增强** | 反爬检测 + 自适应解析，网站变更更鲁棒 |
-| 🌐 **真实浏览器** | Playwright 模拟真人操作，零风控 |
-| 🔄 **自动登录** | Cookie 持久化，只登录一次 |
-| 🛡️ **违禁词过滤** | 内置词库，自动替换敏感词 |
-| 📊 **日志追踪** | 完整操作日志，随时回溯 |
-| 🔧 **模板化** | 7+ 发货模板，开箱即用 |
-
----
-
-## 🕷️ Scrapling 增强技术
-
-> 所有发布脚本均提供 **Scrapling 增强版**，带来更强的鲁棒性和反检测能力。
-
-### 增强版脚本
-
-| 平台 | 标准版 | 增强版 |
-|------|--------|--------|
-| 📕 小红书 | `xhs_publish.py` | `xhs_publish_scrapling.py` ✅已测试 |
-| 🐟 闲鱼 | `xianyu_publish.py` | `xianyu_publish_scrapling.py` |
-| 📺 B站 | `bilibili_publish.py` | `bilibili_publish_scrapling.py` |
-| 🎵 抖音 | `douyin_publish.py` | `douyin_publish_scrapling.py` |
-
-### 技术改进
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    Scrapling 增强层                          │
-├─────────────────────────────────────────────────────────────┤
-│  🔍 页面预检      │ StealthyFetcher 反爬检测               │
-│  🎯 自适应选择器  │ find_similar 自动降级                   │
-│  🔄 增强重试      │ 条件等待 + 自动重试机制                 │
-│  🛡️ 容错设计     │ JS 降级 + 详细日志                      │
-└─────────────────────────────────────────────────────────────┘
-```
-
-### 工作原理
-
-```
-1. Scrapling 预检 → 检测页面可访问性 + 反爬状态
-       ↓
-2. Playwright 自动化 → 实际执行发布操作
-       ↓
-3. 自适应选择器 → 多方法降级，网站变更也能工作
-       ↓
-4. 增强容错 → 每步都有 JS 兜底方案
+# 闲鱼增强版
+python3 publishers/xianyu-publisher/scripts/xianyu_publish_scrapling.py \
+    --title "iPhone 15 Pro Max" \
+    --price 5999 \
+    --condition "95新"
 ```
 
 ---
 
 ## 🏗️ 技术架构
 
-```
-         ┌─────────────────────────────────────┐
-         │           🤖 OpenClaw               │
-         │        AI Agent 调度中心            │
-         └──────────────┬──────────────────────┘
-                        │
-    ┌───────────────────┼───────────────────┐
-    │                   │                   │
-    ▼                   ▼                   ▼
-┌────────┐        ┌──────────┐        ┌────────┐
-│ 闲鱼   │        │ 小红书   │        │  B站   │ ...
-│Publisher│        │Publisher │        │Publisher│
-└────┬───┘        └────┬─────┘        └────┬───┘
-     │                 │                   │
-     └─────────────────┼───────────────────┘
-                       │
-         ┌─────────────┴─────────────┐
-         │                           │
-         ▼                           ▼
-┌─────────────────────┐  ┌─────────────────────┐
-│      Playwright      │  │      Scrapling       │
-│   🌐 浏览器自动化     │  │   🕷️ 反爬预检       │
-└──────────┬──────────┘  └──────────┬──────────┘
-           │                        │
-           └────────────┬───────────┘
-                        ▼
-         ┌─────────────────────────────┐
-         │          🐟 闲鱼             │
-         │          📕 小红书            │
-         │          📺 B站               │
-         │          🎵 抖音              │
-         └─────────────────────────────┘
-```
+![Architecture Diagram](./architecture.svg)
+
+整体采用三层架构设计。最顶层是 **AI Agent 调度中心**，由 OpenClaw 驱动，负责内容生成、任务编排与违禁词过滤。中间层由 **Playwright 浏览器引擎**和 **Scrapling 反爬引擎**协同工作，前者负责真实浏览器操作，后者提供预检与自适应能力。底层直接对接四大社交平台，完成内容的最终分发。
+
+---
+
+## 🕷️ Scrapling 增强技术
+
+![Scrapling Flow](./scrapling-flow.svg)
+
+所有发布脚本均提供 Scrapling 增强版，在标准 Playwright 自动化之上叠加四层防护：页面预检验证目标可访问性，浏览器执行完成真实操作，自适应选择器在网站改版后自动降级，增强容错层提供 JS 兜底与自动重试。
+
+| 平台 | 标准版 | Scrapling 增强版 |
+|------|--------|-----------------|
+| 📕 小红书 | `xhs_publish.py` | `xhs_publish_scrapling.py` ✅ 已测试 |
+| 🐟 闲鱼 | `xianyu_publish.py` | `xianyu_publish_scrapling.py` |
+| 📺 B站 | `bilibili_publish.py` | `bilibili_publish_scrapling.py` |
+| 🎵 抖音 | `douyin_publish.py` | `douyin_publish_scrapling.py` |
 
 ---
 
@@ -190,40 +191,37 @@ scrapling install --force
 
 ```
 social-publisher/
-│
-├── README.md                 📖 项目文档
-├── LICENSE                   📄 MIT 许可证
-│
-└── publishers/               🚀 四大平台发布模块
-    │
-    ├── 🐟 xianyu-publisher/     闲鱼自动发布
+├── README.md
+├── LICENSE
+└── publishers/
+    ├── xianyu-publisher/          🐟 闲鱼自动发布
     │   ├── SKILL.md
     │   ├── scripts/
-    │   │   ├── xianyu_publish.py             # 标准版
-    │   │   ├── xianyu_publish_scrapling.py   # Scrapling增强版 ✨
-    │   │   └── auto_publish.py               # 高级发布
+    │   │   ├── xianyu_publish.py
+    │   │   ├── xianyu_publish_scrapling.py
+    │   │   └── auto_publish.py
     │   └── references/
     │
-    ├── 📕 xhs-publisher/        小红书自动发布
+    ├── xhs-publisher/             📕 小红书自动发布
     │   ├── SKILL.md
     │   ├── scripts/
-    │   │   ├── xhs_publish.py              # 标准版
-    │   │   └── xhs_publish_scrapling.py   # Scrapling增强版 ✨
+    │   │   ├── xhs_publish.py
+    │   │   └── xhs_publish_scrapling.py
     │   └── references/
     │
-    ├── 📺 bilibili-publisher/   B站专栏自动发布
+    ├── bilibili-publisher/        📺 B站专栏自动发布
     │   ├── SKILL.md
     │   ├── scripts/
-    │   │   ├── bilibili_publish.py              # 标准版
-    │   │   └── bilibili_publish_scrapling.py   # Scrapling增强版 ✨
+    │   │   ├── bilibili_publish.py
+    │   │   └── bilibili_publish_scrapling.py
     │   └── references/
     │
-    └── 🎵 douyin-publisher/      抖音图文自动发布
+    └── douyin-publisher/          🎵 抖音图文自动发布
         ├── SKILL.md
         ├── scripts/
-        │   ├── douyin_publish.py              # 标准版
-        │   ├── douyin_publish_scrapling.py   # Scrapling增强版 ✨
-        │   └── generate_images.py             # AI配图
+        │   ├── douyin_publish.py
+        │   ├── douyin_publish_scrapling.py
+        │   └── generate_images.py
         └── references/
 ```
 
@@ -231,65 +229,59 @@ social-publisher/
 
 ## 🔧 故障排查
 
-**Q: 登录失效怎么办？**
+**登录失效**
+
 ```bash
-# 重新登录对应平台
-"登录闲鱼" / "登录小红书" / "登录B站"
+# 重新登录对应平台，Cookie 会自动更新
+"登录闲鱼" / "登录小红书" / "登录B站" / "登录抖音"
 ```
 
-**Q: 发布失败？**
+**发布失败，建议切换增强版**
+
 ```bash
-# 检查浏览器状态
+# 查看当前浏览器状态快照
 agent-browser snapshot
 
-# 使用 Scrapling 增强版脚本（更鲁棒）
+# 切换到 Scrapling 增强版脚本，鲁棒性更强
 python3 xhs_publish_scrapling.py --title "标题" --content "内容"
 ```
 
-**Q: 配图中文乱码？**
+**配图中文乱码（macOS）**
+
 ```bash
-# macOS 安装字体
 brew install font-morisawa
 cp $(find /usr/fonts -name "*.ttc" | head -1) ~/Library/Fonts/
 ```
 
 ---
 
-## 🤝 贡献
+## 🤝 贡献指南
 
-欢迎 Star ⭐ 和 PR！
+欢迎提交 Issue 和 Pull Request！
 
 ```bash
-1. Fork 本项目
-2. 创建分支 git checkout -b feature/AmazingFeature
-3. 提交更改 git commit -m 'Add AmazingFeature'
-4. 推送 git push origin feature/AmazingFeature
-5. 创建 Pull Request
+git checkout -b feature/AmazingFeature
+git commit -m 'feat: Add AmazingFeature'
+git push origin feature/AmazingFeature
+# 然后创建 Pull Request
 ```
 
 ---
 
 ## 📄 许可证
 
-MIT License - 详见 [LICENSE](LICENSE)
+本项目基于 [MIT License](LICENSE) 开源。
 
 ---
 
-## 👥 作者
+<div align="center">
 
-- **Alan Song** 
-- **Roxy Li**
+**Made with ❤️ by Alan Song & Roxy Li**
 
----
+[![OpenClaw](https://img.shields.io/badge/Powered_by-OpenClaw-blueviolet?style=for-the-badge)](https://openclaw.ai)
+[![Playwright](https://img.shields.io/badge/Browser-Playwright-green?style=for-the-badge&logo=playwright)](https://playwright.dev)
+[![Scrapling](https://img.shields.io/badge/Enhanced_by-Scrapling-blue?style=for-the-badge)](https://github.com/D4Vinci/Scrapling)
 
-<p align="center">
-  <strong>Made with ❤️ by AI Agent</strong>
-  <br><br>
-  <img src="https://img.shields.io/badge/OpenClaw-Automation-blueviolet?style=for-the-badge&logo=robot" />
-  <img src="https://img.shields.io/badge/Playwright-Browser-green?style=for-the-badge&logo=microsoft" />
-  <img src="https://img.shields.io/badge/Scrapling-Enhanced-blue?style=for-the-badge&logo=lightning" />
-</p>
+*Built for creators · Designed for scale*
 
-<p align="center">
-  <sub>Built for creators · Designed for scale</sub>
-</p>
+</div>

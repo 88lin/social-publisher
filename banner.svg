@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" width="1280" height="360">
+  <defs>
+    <!-- Main gradient background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0c29"/>
+      <stop offset="50%" style="stop-color:#302b63"/>
+      <stop offset="100%" style="stop-color:#24243e"/>
+    </linearGradient>
+    <!-- Glow effect for circles -->
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#4ecdc4;stop-opacity:0.35"/>
+      <stop offset="100%" style="stop-color:#4ecdc4;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="glow3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#a29bfe;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#a29bfe;stop-opacity:0"/>
+    </radialGradient>
+    <!-- Text gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b6b"/>
+      <stop offset="50%" style="stop-color:#ffd93d"/>
+      <stop offset="100%" style="stop-color:#4ecdc4"/>
+    </linearGradient>
+    <!-- Shimmer line gradient -->
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#ff6b6b;stop-opacity:1"/>
+      <stop offset="70%" style="stop-color:#4ecdc4;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#4ecdc4;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="blur1">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+    <filter id="blur2">
+      <feGaussianBlur stdDeviation="25"/>
+    </filter>
+    <filter id="textShadow">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#ff6b6b" flood-opacity="0.5"/>
+    </filter>
+    <filter id="subtitleShadow">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#4ecdc4" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="360" fill="url(#bgGrad)"/>
+
+  <!-- Decorative glow blobs -->
+  <ellipse cx="150" cy="80" rx="200" ry="160" fill="url(#glow1)" filter="url(#blur1)"/>
+  <ellipse cx="1130" cy="280" rx="220" ry="180" fill="url(#glow2)" filter="url(#blur1)"/>
+  <ellipse cx="640" cy="180" rx="300" ry="200" fill="url(#glow3)" filter="url(#blur2)"/>
+
+  <!-- Grid dots pattern -->
+  <g opacity="0.12">
+    <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1.5" fill="#ffffff"/>
+    </pattern>
+    <rect width="1280" height="360" fill="url(#dots)"/>
+  </g>
+
+  <!-- Decorative geometric shapes -->
+  <!-- Top-left hexagon outline -->
+  <polygon points="60,30 100,10 140,30 140,70 100,90 60,70" fill="none" stroke="#ff6b6b" stroke-width="1.5" opacity="0.4"/>
+  <!-- Bottom-right hexagon outline -->
+  <polygon points="1140,270 1180,250 1220,270 1220,310 1180,330 1140,310" fill="none" stroke="#4ecdc4" stroke-width="1.5" opacity="0.4"/>
+  <!-- Small decorative circles -->
+  <circle cx="200" cy="300" r="40" fill="none" stroke="#a29bfe" stroke-width="1" opacity="0.3"/>
+  <circle cx="200" cy="300" r="25" fill="none" stroke="#a29bfe" stroke-width="1" opacity="0.2"/>
+  <circle cx="1080" cy="60" r="35" fill="none" stroke="#ffd93d" stroke-width="1" opacity="0.3"/>
+  <circle cx="1080" cy="60" r="20" fill="none" stroke="#ffd93d" stroke-width="1" opacity="0.2"/>
+
+  <!-- Diagonal accent lines -->
+  <line x1="0" y1="360" x2="120" y2="240" stroke="#ff6b6b" stroke-width="1" opacity="0.2"/>
+  <line x1="1280" y1="0" x2="1160" y2="120" stroke="#4ecdc4" stroke-width="1" opacity="0.2"/>
+
+  <!-- Platform icons row (top) -->
+  <!-- Fish icon for 闲鱼 -->
+  <g transform="translate(340, 60)" opacity="0.9">
+    <circle cx="0" cy="0" r="22" fill="#ff6b6b" opacity="0.15"/>
+    <text x="0" y="8" text-anchor="middle" font-size="24" fill="#ff6b6b">🐟</text>
+  </g>
+  <!-- XHS icon -->
+  <g transform="translate(440, 60)" opacity="0.9">
+    <circle cx="0" cy="0" r="22" fill="#ff4757" opacity="0.15"/>
+    <text x="0" y="8" text-anchor="middle" font-size="24" fill="#ff4757">📕</text>
+  </g>
+  <!-- Bilibili icon -->
+  <g transform="translate(540, 60)" opacity="0.9">
+    <circle cx="0" cy="0" r="22" fill="#4ecdc4" opacity="0.15"/>
+    <text x="0" y="8" text-anchor="middle" font-size="24" fill="#4ecdc4">📺</text>
+  </g>
+  <!-- Douyin icon -->
+  <g transform="translate(640, 60)" opacity="0.9">
+    <circle cx="0" cy="0" r="22" fill="#a29bfe" opacity="0.15"/>
+    <text x="0" y="8" text-anchor="middle" font-size="24" fill="#a29bfe">🎵</text>
+  </g>
+  <!-- Rocket -->
+  <g transform="translate(740, 60)" opacity="0.9">
+    <circle cx="0" cy="0" r="22" fill="#ffd93d" opacity="0.15"/>
+    <text x="0" y="8" text-anchor="middle" font-size="24" fill="#ffd93d">🚀</text>
+  </g>
+  <!-- Robot -->
+  <g transform="translate(840, 60)" opacity="0.9">
+    <circle cx="0" cy="0" r="22" fill="#74b9ff" opacity="0.15"/>
+    <text x="0" y="8" text-anchor="middle" font-size="24" fill="#74b9ff">🤖</text>
+  </g>
+
+  <!-- Main title -->
+  <text x="640" y="185" text-anchor="middle" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="82" font-weight="900" fill="url(#titleGrad)" filter="url(#textShadow)" letter-spacing="-2">Social Publisher</text>
+
+  <!-- Shimmer line under title -->
+  <rect x="240" y="200" width="800" height="2" rx="1" fill="url(#lineGrad)" opacity="0.8"/>
+
+  <!-- Subtitle -->
+  <text x="640" y="245" text-anchor="middle" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#dfe6e9" filter="url(#subtitleShadow)" letter-spacing="3">全平台社交媒体自动发布助手</text>
+
+  <!-- Platform tags -->
+  <!-- 闲鱼 tag -->
+  <rect x="310" y="275" width="80" height="28" rx="14" fill="#ff6b6b" opacity="0.2"/>
+  <rect x="310" y="275" width="80" height="28" rx="14" fill="none" stroke="#ff6b6b" stroke-width="1" opacity="0.6"/>
+  <text x="350" y="294" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#ff6b6b" font-weight="600">闲鱼</text>
+
+  <!-- 小红书 tag -->
+  <rect x="405" y="275" width="80" height="28" rx="14" fill="#ff4757" opacity="0.2"/>
+  <rect x="405" y="275" width="80" height="28" rx="14" fill="none" stroke="#ff4757" stroke-width="1" opacity="0.6"/>
+  <text x="445" y="294" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#ff4757" font-weight="600">小红书</text>
+
+  <!-- B站 tag -->
+  <rect x="500" y="275" width="80" height="28" rx="14" fill="#4ecdc4" opacity="0.2"/>
+  <rect x="500" y="275" width="80" height="28" rx="14" fill="none" stroke="#4ecdc4" stroke-width="1" opacity="0.6"/>
+  <text x="540" y="294" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#4ecdc4" font-weight="600">B站专栏</text>
+
+  <!-- 抖音 tag -->
+  <rect x="595" y="275" width="80" height="28" rx="14" fill="#a29bfe" opacity="0.2"/>
+  <rect x="595" y="275" width="80" height="28" rx="14" fill="none" stroke="#a29bfe" stroke-width="1" opacity="0.6"/>
+  <text x="635" y="294" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#a29bfe" font-weight="600">抖音图文</text>
+
+  <!-- AI tag -->
+  <rect x="690" y="275" width="80" height="28" rx="14" fill="#ffd93d" opacity="0.2"/>
+  <rect x="690" y="275" width="80" height="28" rx="14" fill="none" stroke="#ffd93d" stroke-width="1" opacity="0.6"/>
+  <text x="730" y="294" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#ffd93d" font-weight="600">AI 驱动</text>
+
+  <!-- Scrapling tag -->
+  <rect x="785" y="275" width="100" height="28" rx="14" fill="#74b9ff" opacity="0.2"/>
+  <rect x="785" y="275" width="100" height="28" rx="14" fill="none" stroke="#74b9ff" stroke-width="1" opacity="0.6"/>
+  <text x="835" y="294" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#74b9ff" font-weight="600">Scrapling</text>
+
+  <!-- Bottom decorative line -->
+  <rect x="0" y="355" width="1280" height="5" fill="url(#lineGrad)" opacity="0.6"/>
+</svg>
