@@ -16,6 +16,7 @@ import argparse
 import subprocess
 from pathlib import Path
 from typing import Optional, List
+from playwright.async_api import async_playwright
 
 # ── 配置 ──────────────────────────────────────────────────────────────────────
 DEFAULT_PROFILE = os.path.expanduser("~/.catpaw/douyin_browser_profile")

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" width="1100" height="620">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 700" width="1160" height="700">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#020817"/>
@@ -8,221 +8,202 @@
       <stop offset="0%" style="stop-color:#6366f1"/>
       <stop offset="100%" style="stop-color:#06b6d4"/>
     </linearGradient>
-    <!-- Layer card fills -->
-    <linearGradient id="layerTop" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e1b4b"/>
-      <stop offset="100%" style="stop-color:#0f0a2e"/>
+    <!-- Card fills -->
+    <linearGradient id="cPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d1b69;stop-opacity:0.55"/>
+      <stop offset="100%" style="stop-color:#1e1040;stop-opacity:0.55"/>
     </linearGradient>
-    <linearGradient id="layerMid" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0c1a2e"/>
-      <stop offset="100%" style="stop-color:#060e1c"/>
+    <linearGradient id="cBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c2340;stop-opacity:0.55"/>
+      <stop offset="100%" style="stop-color:#071628;stop-opacity:0.55"/>
     </linearGradient>
-    <linearGradient id="layerBot" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0d1f14"/>
-      <stop offset="100%" style="stop-color:#060f0a"/>
+    <linearGradient id="cGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d2818;stop-opacity:0.55"/>
+      <stop offset="100%" style="stop-color:#071810;stop-opacity:0.55"/>
     </linearGradient>
-    <linearGradient id="layerData" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a0f2e"/>
-      <stop offset="100%" style="stop-color:#0d0618"/>
+    <linearGradient id="cTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c2340;stop-opacity:0.45"/>
+      <stop offset="100%" style="stop-color:#071628;stop-opacity:0.45"/>
     </linearGradient>
-    <!-- Module fills -->
-    <linearGradient id="modPurple" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2d1b69;stop-opacity:0.6"/>
-      <stop offset="100%" style="stop-color:#1e1040;stop-opacity:0.6"/>
+    <linearGradient id="cAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d1b00;stop-opacity:0.55"/>
+      <stop offset="100%" style="stop-color:#1a1000;stop-opacity:0.55"/>
     </linearGradient>
-    <linearGradient id="modBlue" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0c2340;stop-opacity:0.6"/>
-      <stop offset="100%" style="stop-color:#071628;stop-opacity:0.6"/>
-    </linearGradient>
-    <linearGradient id="modGreen" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0d2818;stop-opacity:0.6"/>
-      <stop offset="100%" style="stop-color:#071810;stop-opacity:0.6"/>
-    </linearGradient>
-    <filter id="layerGlow">
-      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#6366f1" flood-opacity="0.2"/>
-    </filter>
-    <filter id="modGlow">
-      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#6366f1" flood-opacity="0.35"/>
-    </filter>
-    <filter id="cyanGlow">
-      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#06b6d4" flood-opacity="0.35"/>
-    </filter>
-    <filter id="greenGlow">
-      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#10b981" flood-opacity="0.35"/>
-    </filter>
-    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
-      <polygon points="0 0, 8 3, 0 6" fill="#6366f1" opacity="0.7"/>
+    <filter id="fPurple"><feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#8b5cf6" flood-opacity="0.35"/></filter>
+    <filter id="fBlue"><feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#06b6d4" flood-opacity="0.35"/></filter>
+    <filter id="fGreen"><feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#10b981" flood-opacity="0.35"/></filter>
+    <filter id="fAmber"><feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#f59e0b" flood-opacity="0.35"/></filter>
+    <filter id="fRed"><feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#f43f5e" flood-opacity="0.35"/></filter>
+    <marker id="arrP" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#8b5cf6" opacity="0.8"/>
     </marker>
-    <marker id="arrCyan" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
-      <polygon points="0 0, 8 3, 0 6" fill="#06b6d4" opacity="0.7"/>
+    <marker id="arrB" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#06b6d4" opacity="0.8"/>
     </marker>
-    <marker id="arrGreen" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
-      <polygon points="0 0, 8 3, 0 6" fill="#10b981" opacity="0.7"/>
+    <marker id="arrG" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#10b981" opacity="0.8"/>
+    </marker>
+    <marker id="arrA" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#f59e0b" opacity="0.8"/>
+    </marker>
+    <marker id="arrR" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#f43f5e" opacity="0.8"/>
     </marker>
   </defs>
 
   <!-- Background -->
-  <rect width="1100" height="620" fill="url(#bg)" rx="16"/>
-
-  <!-- Top accent -->
-  <rect x="0" y="0" width="1100" height="3" rx="0" fill="url(#accentH)" opacity="0.9"/>
+  <rect width="1160" height="700" fill="url(#bg)" rx="16"/>
+  <rect x="0" y="0" width="1160" height="3" fill="url(#accentH)" opacity="0.9"/>
 
   <!-- Title -->
-  <text x="550" y="38" text-anchor="middle" font-family="'SF Pro Display', Arial, sans-serif" font-size="14" font-weight="700" fill="#64748b" letter-spacing="4">AMPLIPOST  ·  SYSTEM ARCHITECTURE</text>
-  <rect x="350" y="46" width="400" height="1" fill="url(#accentH)" opacity="0.4"/>
+  <text x="580" y="38" text-anchor="middle" font-family="'SF Pro Display', Arial, sans-serif" font-size="13" font-weight="700" fill="#64748b" letter-spacing="4">AMPLIPOST  ·  MULTI-AGENT  ARCHITECTURE</text>
+  <rect x="330" y="46" width="500" height="1" fill="url(#accentH)" opacity="0.35"/>
 
-  <!-- ============================================================ -->
-  <!-- LAYER 1: 内容中台 (Content Hub) -->
-  <!-- ============================================================ -->
-  <rect x="40" y="65" width="1020" height="130" rx="12" fill="url(#layerTop)" filter="url(#layerGlow)"/>
-  <rect x="40" y="65" width="1020" height="130" rx="12" fill="none" stroke="#6366f1" stroke-width="1" opacity="0.4"/>
-  <!-- Layer label -->
-  <rect x="40" y="65" width="130" height="28" rx="12 0 8 0" fill="#6366f1" opacity="0.7"/>
-  <text x="105" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#e0e7ff" letter-spacing="1">内容中台</text>
+  <!-- ================================================================ -->
+  <!-- USER INPUT (top) -->
+  <!-- ================================================================ -->
+  <rect x="430" y="62" width="300" height="44" rx="22" fill="#1e1b4b" filter="url(#fPurple)"/>
+  <rect x="430" y="62" width="300" height="44" rx="22" fill="none" stroke="#6366f1" stroke-width="1.5" opacity="0.7"/>
+  <text x="580" y="80" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="12" font-weight="700" fill="#a5b4fc">👤 用户输入</text>
+  <text x="580" y="97" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="10" fill="#64748b">「帮我发小红书，主题是 AI 工具推荐」</text>
 
-  <!-- Module: LLM 内容引擎 -->
-  <rect x="65" y="105" width="190" height="72" rx="10" fill="url(#modPurple)" filter="url(#modGlow)"/>
-  <rect x="65" y="105" width="190" height="72" rx="10" fill="none" stroke="#8b5cf6" stroke-width="1.2" opacity="0.7"/>
-  <text x="160" y="128" text-anchor="middle" font-size="18">🤖</text>
-  <text x="160" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#c4b5fd">LLM 内容引擎</text>
-  <text x="160" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">标题 · 正文 · 话题标签</text>
+  <!-- Arrow: user → coordinator -->
+  <line x1="580" y1="106" x2="580" y2="138" stroke="#6366f1" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6" marker-end="url(#arrP)"/>
 
-  <!-- Module: AI 配图生成 -->
-  <rect x="275" y="105" width="190" height="72" rx="10" fill="url(#modPurple)" filter="url(#modGlow)"/>
-  <rect x="275" y="105" width="190" height="72" rx="10" fill="none" stroke="#8b5cf6" stroke-width="1.2" opacity="0.7"/>
-  <text x="370" y="128" text-anchor="middle" font-size="18">🎨</text>
-  <text x="370" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#c4b5fd">AI 配图生成</text>
-  <text x="370" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">封面图 · 商品图 · 配图</text>
+  <!-- ================================================================ -->
+  <!-- PHASE 0: Memory Read -->
+  <!-- ================================================================ -->
+  <!-- Memory node (left side) -->
+  <rect x="60" y="148" width="160" height="80" rx="12" fill="url(#cGreen)" filter="url(#fGreen)"/>
+  <rect x="60" y="148" width="160" height="80" rx="12" fill="none" stroke="#10b981" stroke-width="1.2" opacity="0.65"/>
+  <text x="140" y="172" text-anchor="middle" font-size="18">💾</text>
+  <text x="140" y="192" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="12" font-weight="700" fill="#6ee7b7">memory.md</text>
+  <text x="140" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">长期记忆 · 内容指纹</text>
+  <text x="140" y="224" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">风控日志 · 用户偏好</text>
 
-  <!-- Module: 违禁词过滤 -->
-  <rect x="485" y="105" width="190" height="72" rx="10" fill="url(#modPurple)" filter="url(#modGlow)"/>
-  <rect x="485" y="105" width="190" height="72" rx="10" fill="none" stroke="#8b5cf6" stroke-width="1.2" opacity="0.7"/>
-  <text x="580" y="128" text-anchor="middle" font-size="18">🛡️</text>
-  <text x="580" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#c4b5fd">违禁词过滤</text>
-  <text x="580" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">内置词库 · 自动替换</text>
+  <!-- ================================================================ -->
+  <!-- COORDINATOR (center) -->
+  <!-- ================================================================ -->
+  <rect x="380" y="138" width="400" height="110" rx="14" fill="url(#cPurple)" filter="url(#fPurple)"/>
+  <rect x="380" y="138" width="400" height="110" rx="14" fill="none" stroke="#8b5cf6" stroke-width="1.5" opacity="0.75"/>
+  <rect x="380" y="138" width="180" height="26" rx="14 0 8 0" fill="#7c3aed" opacity="0.75"/>
+  <text x="470" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#ede9fe" letter-spacing="1">content-coordinator</text>
+  <text x="580" y="185" text-anchor="middle" font-size="20">🤖</text>
+  <text x="580" y="207" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="13" font-weight="700" fill="#c4b5fd">主 Agent · 全程调度</text>
+  <text x="580" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">解析输入 · 生成内容 · 调度 subagent · 执行发布 · 汇报结果</text>
 
-  <!-- Module: 模板管理 -->
-  <rect x="695" y="105" width="190" height="72" rx="10" fill="url(#modPurple)" filter="url(#modGlow)"/>
-  <rect x="695" y="105" width="190" height="72" rx="10" fill="none" stroke="#8b5cf6" stroke-width="1.2" opacity="0.7"/>
-  <text x="790" y="128" text-anchor="middle" font-size="18">📋</text>
-  <text x="790" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#c4b5fd">模板管理</text>
-  <text x="790" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">7+ 发布模板 · 自定义</text>
+  <!-- Memory ↔ Coordinator arrows -->
+  <line x1="220" y1="188" x2="380" y2="188" stroke="#10b981" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.55" marker-end="url(#arrG)"/>
+  <text x="300" y="182" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#10b981">Phase 0 读取</text>
 
-  <!-- Module: 任务编排 -->
-  <rect x="895" y="105" width="140" height="72" rx="10" fill="url(#modPurple)" filter="url(#modGlow)"/>
-  <rect x="895" y="105" width="140" height="72" rx="10" fill="none" stroke="#8b5cf6" stroke-width="1.2" opacity="0.7"/>
-  <text x="965" y="128" text-anchor="middle" font-size="18">⚙️</text>
-  <text x="965" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#c4b5fd">任务编排</text>
-  <text x="965" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">调度 · 队列 · 重试</text>
+  <!-- ================================================================ -->
+  <!-- HOOKS (right side) -->
+  <!-- ================================================================ -->
+  <rect x="940" y="148" width="180" height="80" rx="12" fill="url(#cAmber)" filter="url(#fAmber)"/>
+  <rect x="940" y="148" width="180" height="80" rx="12" fill="none" stroke="#f59e0b" stroke-width="1.2" opacity="0.65"/>
+  <text x="1030" y="172" text-anchor="middle" font-size="16">⚡</text>
+  <text x="1030" y="192" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="12" font-weight="700" fill="#fcd34d">Hooks 系统</text>
+  <text x="1030" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">PreToolUse · PostToolUse</text>
+  <text x="1030" y="224" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">违禁词 · emoji · 极限词</text>
 
-  <!-- ============================================================ -->
-  <!-- Arrow Layer 1 → Layer 2 -->
-  <!-- ============================================================ -->
-  <line x1="550" y1="195" x2="550" y2="228" stroke="#6366f1" stroke-width="2" stroke-dasharray="5,3" opacity="0.6" marker-end="url(#arr)"/>
+  <!-- Coordinator ↔ Hooks -->
+  <line x1="780" y1="188" x2="940" y2="188" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.55" marker-end="url(#arrA)"/>
+  <text x="860" y="182" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f59e0b">发布前后拦截</text>
 
-  <!-- ============================================================ -->
-  <!-- LAYER 2: 投放引擎 (Distribution Engine) -->
-  <!-- ============================================================ -->
-  <rect x="40" y="228" width="1020" height="130" rx="12" fill="url(#layerMid)" filter="url(#cyanGlow)"/>
-  <rect x="40" y="228" width="1020" height="130" rx="12" fill="none" stroke="#06b6d4" stroke-width="1" opacity="0.4"/>
-  <rect x="40" y="228" width="130" height="28" rx="12 0 8 0" fill="#0891b2" opacity="0.7"/>
-  <text x="105" y="246" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#cffafe" letter-spacing="1">投放引擎</text>
+  <!-- ================================================================ -->
+  <!-- SUBAGENTS ROW -->
+  <!-- ================================================================ -->
+  <!-- Arrow: coordinator → subagents -->
+  <line x1="480" y1="248" x2="340" y2="310" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.55" marker-end="url(#arrB)"/>
+  <line x1="680" y1="248" x2="820" y2="310" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.55" marker-end="url(#arrP)"/>
 
-  <!-- Module: Playwright 浏览器 -->
-  <rect x="65" y="268" width="230" height="72" rx="10" fill="url(#modBlue)" filter="url(#cyanGlow)"/>
-  <rect x="65" y="268" width="230" height="72" rx="10" fill="none" stroke="#06b6d4" stroke-width="1.2" opacity="0.7"/>
-  <text x="180" y="291" text-anchor="middle" font-size="18">🌐</text>
-  <text x="180" y="311" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#67e8f9">Playwright 浏览器引擎</text>
-  <text x="180" y="328" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">真实操作 · Cookie 持久化 · 零风控</text>
+  <!-- content-reviewer -->
+  <rect x="160" y="310" width="360" height="110" rx="14" fill="url(#cBlue)" filter="url(#fBlue)"/>
+  <rect x="160" y="310" width="360" height="110" rx="14" fill="none" stroke="#06b6d4" stroke-width="1.5" opacity="0.7"/>
+  <rect x="160" y="310" width="160" height="26" rx="14 0 8 0" fill="#0891b2" opacity="0.7"/>
+  <text x="240" y="327" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#cffafe" letter-spacing="1">content-reviewer</text>
+  <text x="340" y="358" text-anchor="middle" font-size="18">📝</text>
+  <text x="340" y="378" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="12" font-weight="700" fill="#67e8f9">独立内容质量评审</text>
+  <text x="340" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">钩子强度 · 信息密度 · 真实感 · 平台适配 · 多样性</text>
+  <text x="340" y="412" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">总分 &lt; 70 → 打回重写（最多 2 次）</text>
 
-  <!-- Module: Scrapling 反爬 -->
-  <rect x="315" y="268" width="230" height="72" rx="10" fill="url(#modBlue)" filter="url(#cyanGlow)"/>
-  <rect x="315" y="268" width="230" height="72" rx="10" fill="none" stroke="#06b6d4" stroke-width="1.2" opacity="0.7"/>
-  <text x="430" y="291" text-anchor="middle" font-size="18">🕷️</text>
-  <text x="430" y="311" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#67e8f9">Scrapling 反爬引擎</text>
-  <text x="430" y="328" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">预检 · 自适应选择器 · JS 降级</text>
+  <!-- publish-guard -->
+  <rect x="640" y="310" width="360" height="110" rx="14" fill="url(#cPurple)" filter="url(#fPurple)"/>
+  <rect x="640" y="310" width="360" height="110" rx="14" fill="none" stroke="#8b5cf6" stroke-width="1.5" opacity="0.7"/>
+  <rect x="640" y="310" width="150" height="26" rx="14 0 8 0" fill="#7c3aed" opacity="0.7"/>
+  <text x="715" y="327" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#ede9fe" letter-spacing="1">publish-guard</text>
+  <text x="820" y="358" text-anchor="middle" font-size="18">🛡️</text>
+  <text x="820" y="378" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="12" font-weight="700" fill="#c4b5fd">发布风控守卫</text>
+  <text x="820" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">发布频率 · 间隔规律性 · 内容多样性 · 账号行为</text>
+  <text x="820" y="412" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">allow / delay / block 三态决策</text>
 
-  <!-- Module: 登录态管理 -->
-  <rect x="565" y="268" width="190" height="72" rx="10" fill="url(#modBlue)" filter="url(#cyanGlow)"/>
-  <rect x="565" y="268" width="190" height="72" rx="10" fill="none" stroke="#06b6d4" stroke-width="1.2" opacity="0.7"/>
-  <text x="660" y="291" text-anchor="middle" font-size="18">🔐</text>
-  <text x="660" y="311" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#67e8f9">登录态管理</text>
-  <text x="660" y="328" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">多账号 · Session 复用</text>
+  <!-- Subagent return arrows -->
+  <line x1="340" y1="420" x2="480" y2="468" stroke="#06b6d4" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.45" marker-end="url(#arrB)"/>
+  <line x1="820" y1="420" x2="680" y2="468" stroke="#8b5cf6" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.45" marker-end="url(#arrP)"/>
+  <text x="390" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#06b6d4">评审报告 JSON</text>
+  <text x="770" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#8b5cf6">风控决策 JSON</text>
 
-  <!-- Module: 发布调度 -->
-  <rect x="775" y="268" width="260" height="72" rx="10" fill="url(#modBlue)" filter="url(#cyanGlow)"/>
-  <rect x="775" y="268" width="260" height="72" rx="10" fill="none" stroke="#06b6d4" stroke-width="1.2" opacity="0.7"/>
-  <text x="905" y="291" text-anchor="middle" font-size="18">📡</text>
-  <text x="905" y="311" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#67e8f9">发布调度器</text>
-  <text x="905" y="328" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">定时发布 · 并发控制 · 失败重试</text>
+  <!-- ================================================================ -->
+  <!-- PLATFORM EXECUTION ROW -->
+  <!-- ================================================================ -->
+  <!-- Arrow: coordinator → platforms -->
+  <line x1="580" y1="468" x2="580" y2="510" stroke="#6366f1" stroke-width="2" stroke-dasharray="5,3" opacity="0.6" marker-end="url(#arrP)"/>
 
-  <!-- ============================================================ -->
-  <!-- Arrow Layer 2 → Layer 3 -->
-  <!-- ============================================================ -->
-  <line x1="550" y1="358" x2="550" y2="391" stroke="#06b6d4" stroke-width="2" stroke-dasharray="5,3" opacity="0.6" marker-end="url(#arrCyan)"/>
-
-  <!-- ============================================================ -->
-  <!-- LAYER 3: 平台矩阵 (Platform Matrix) -->
-  <!-- ============================================================ -->
-  <rect x="40" y="391" width="1020" height="120" rx="12" fill="url(#layerBot)" filter="url(#greenGlow)"/>
-  <rect x="40" y="391" width="1020" height="120" rx="12" fill="none" stroke="#10b981" stroke-width="1" opacity="0.35"/>
-  <rect x="40" y="391" width="130" height="28" rx="12 0 8 0" fill="#059669" opacity="0.7"/>
-  <text x="105" y="409" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#d1fae5" letter-spacing="1">平台矩阵</text>
+  <!-- Platform row label -->
+  <rect x="40" y="510" width="1080" height="120" rx="12" fill="#0d1117" opacity="0.6"/>
+  <rect x="40" y="510" width="1080" height="120" rx="12" fill="none" stroke="#1e293b" stroke-width="1" opacity="0.6"/>
+  <rect x="40" y="510" width="130" height="26" rx="12 0 8 0" fill="#334155" opacity="0.8"/>
+  <text x="105" y="527" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#94a3b8" letter-spacing="1">发布执行层</text>
 
   <!-- 闲鱼 -->
-  <rect x="65" y="430" width="210" height="64" rx="10" fill="#1a0a0a" filter="url(#modGlow)"/>
-  <rect x="65" y="430" width="210" height="64" rx="10" fill="none" stroke="#f43f5e" stroke-width="1.2" opacity="0.6"/>
-  <text x="170" y="453" text-anchor="middle" font-size="16">🐟</text>
-  <text x="170" y="472" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="12" font-weight="700" fill="#fda4af">闲鱼</text>
-  <text x="170" y="487" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">商品发布 · AI 配图</text>
+  <rect x="65" y="546" width="220" height="68" rx="10" fill="#1a0a0a" filter="url(#fRed)"/>
+  <rect x="65" y="546" width="220" height="68" rx="10" fill="none" stroke="#f43f5e" stroke-width="1.2" opacity="0.6"/>
+  <text x="175" y="570" text-anchor="middle" font-size="16">🐟</text>
+  <text x="175" y="590" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="12" font-weight="700" fill="#fda4af">闲鱼</text>
+  <text x="175" y="606" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">商品发布 · AI 配图 · 违禁词过滤</text>
 
   <!-- 小红书 -->
-  <rect x="295" y="430" width="210" height="64" rx="10" fill="#1a0a0a" filter="url(#modGlow)"/>
-  <rect x="295" y="430" width="210" height="64" rx="10" fill="none" stroke="#f43f5e" stroke-width="1.2" opacity="0.6"/>
-  <text x="400" y="453" text-anchor="middle" font-size="16">📕</text>
-  <text x="400" y="472" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="12" font-weight="700" fill="#fda4af">小红书</text>
-  <text x="400" y="487" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">图文笔记 · 爆款标题</text>
+  <rect x="305" y="546" width="220" height="68" rx="10" fill="#1a0a0a" filter="url(#fRed)"/>
+  <rect x="305" y="546" width="220" height="68" rx="10" fill="none" stroke="#f43f5e" stroke-width="1.2" opacity="0.6"/>
+  <text x="415" y="570" text-anchor="middle" font-size="16">📕</text>
+  <text x="415" y="590" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="12" font-weight="700" fill="#fda4af">小红书</text>
+  <text x="415" y="606" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">图文笔记 · 爆款标题 · 文字配图</text>
 
   <!-- B站 -->
-  <rect x="525" y="430" width="210" height="64" rx="10" fill="#0a0f1a" filter="url(#cyanGlow)"/>
-  <rect x="525" y="430" width="210" height="64" rx="10" fill="none" stroke="#06b6d4" stroke-width="1.2" opacity="0.6"/>
-  <text x="630" y="453" text-anchor="middle" font-size="16">📺</text>
-  <text x="630" y="472" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="12" font-weight="700" fill="#67e8f9">B站专栏</text>
-  <text x="630" y="487" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">深度文章 · 自动排版</text>
+  <rect x="545" y="546" width="220" height="68" rx="10" fill="#0a0f1a" filter="url(#fBlue)"/>
+  <rect x="545" y="546" width="220" height="68" rx="10" fill="none" stroke="#06b6d4" stroke-width="1.2" opacity="0.6"/>
+  <text x="655" y="570" text-anchor="middle" font-size="16">📺</text>
+  <text x="655" y="590" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="12" font-weight="700" fill="#67e8f9">B站专栏</text>
+  <text x="655" y="606" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">深度文章 · 自动排版 · 草稿管理</text>
 
   <!-- 抖音 -->
-  <rect x="755" y="430" width="210" height="64" rx="10" fill="#0f0a1a" filter="url(#modGlow)"/>
-  <rect x="755" y="430" width="210" height="64" rx="10" fill="none" stroke="#8b5cf6" stroke-width="1.2" opacity="0.6"/>
-  <text x="860" y="453" text-anchor="middle" font-size="16">🎵</text>
-  <text x="860" y="472" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="12" font-weight="700" fill="#c4b5fd">抖音图文</text>
-  <text x="860" y="487" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">短平快 · 创作者直发</text>
+  <rect x="785" y="546" width="220" height="68" rx="10" fill="#0f0a1a" filter="url(#fPurple)"/>
+  <rect x="785" y="546" width="220" height="68" rx="10" fill="none" stroke="#8b5cf6" stroke-width="1.2" opacity="0.6"/>
+  <text x="895" y="570" text-anchor="middle" font-size="16">🎵</text>
+  <text x="895" y="590" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="12" font-weight="700" fill="#c4b5fd">抖音图文</text>
+  <text x="895" y="606" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">短平快 · AI 信息图 · 创作者直发</text>
 
-  <!-- ============================================================ -->
-  <!-- Arrow Layer 3 → Layer 4 (data return) -->
-  <!-- ============================================================ -->
-  <!-- Return arrow on right side -->
-  <path d="M 1060 462 Q 1090 462 1090 380 Q 1090 298 1060 298" fill="none" stroke="#10b981" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.5" marker-end="url(#arrGreen)"/>
-  <text x="1095" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#10b981" transform="rotate(90, 1095, 385)">数据回流</text>
+  <!-- ================================================================ -->
+  <!-- MEMORY WRITE (bottom) -->
+  <!-- ================================================================ -->
+  <!-- Return arrow: platforms → memory -->
+  <path d="M 1060 580 Q 1110 580 1110 480 Q 1110 380 1110 280 Q 1110 188 940 188" fill="none" stroke="#10b981" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.45" marker-end="url(#arrG)"/>
+  <text x="1118" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#10b981" transform="rotate(90, 1118, 390)">Phase 8 写入记忆</text>
 
-  <!-- ============================================================ -->
-  <!-- LAYER 4: 数据层 (Data Layer) - bottom strip -->
-  <!-- ============================================================ -->
-  <rect x="40" y="530" width="1020" height="60" rx="12" fill="url(#layerData)"/>
-  <rect x="40" y="530" width="1020" height="60" rx="12" fill="none" stroke="#8b5cf6" stroke-width="1" opacity="0.3"/>
-  <rect x="40" y="530" width="130" height="28" rx="12 0 8 0" fill="#7c3aed" opacity="0.6"/>
-  <text x="105" y="548" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#ede9fe" letter-spacing="1">数据层</text>
+  <!-- Memory write arrow from coordinator -->
+  <path d="M 380 210 Q 300 210 220 210" fill="none" stroke="#10b981" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.35" marker-end="url(#arrG)"/>
 
-  <!-- Data modules inline -->
-  <text x="260" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#a78bfa">📊 发布日志</text>
-  <line x1="340" y1="555" x2="340" y2="575" stroke="#334155" stroke-width="1"/>
-  <text x="450" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#a78bfa">🍪 Cookie 存储</text>
-  <line x1="540" y1="555" x2="540" y2="575" stroke="#334155" stroke-width="1"/>
-  <text x="650" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#a78bfa">📁 内容归档</text>
-  <line x1="740" y1="555" x2="740" y2="575" stroke="#334155" stroke-width="1"/>
-  <text x="850" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#a78bfa">📈 效果追踪</text>
-  <line x1="940" y1="555" x2="940" y2="575" stroke="#334155" stroke-width="1"/>
-  <text x="1010" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#a78bfa">⚠️ 异常告警</text>
+  <!-- ================================================================ -->
+  <!-- OUTPUT (bottom) -->
+  <!-- ================================================================ -->
+  <rect x="430" y="648" width="300" height="36" rx="18" fill="#0d2818" filter="url(#fGreen)"/>
+  <rect x="430" y="648" width="300" height="36" rx="18" fill="none" stroke="#10b981" stroke-width="1.2" opacity="0.6"/>
+  <text x="580" y="662" text-anchor="middle" font-family="'PingFang SC', Arial, sans-serif" font-size="11" font-weight="700" fill="#6ee7b7">✅ 发布完成报告</text>
+  <text x="580" y="677" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">平台 · 状态 · 备注（表格形式）</text>
+
+  <!-- Arrow: platforms → output -->
+  <line x1="580" y1="630" x2="580" y2="648" stroke="#10b981" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5" marker-end="url(#arrG)"/>
 
   <!-- Bottom accent -->
-  <rect x="0" y="613" width="1100" height="7" rx="0 0 16 16" fill="url(#accentH)" opacity="0.6"/>
+  <rect x="0" y="693" width="1160" height="7" rx="0 0 16 16" fill="url(#accentH)" opacity="0.55"/>
 </svg>

@@ -9,40 +9,11 @@ description: B站（哔哩哔哩）专栏自动发布助手。生成深度专栏
 
 ### 模式一：内容生成 + 自动发布（推荐）
 
-用户提供任意输入，Claude 生成深度专栏文章后自动发布：
-
-| 输入类型 | 示例 |
-|---------|------|
-| **主题** | "AI 行业就业分析" |
-| **痛点** | "35岁程序员焦虑" |
-| **话题** | "技术人职业规划" |
-| **目标人群** | "面向转行程序员" |
-
-**生成流程：**
-```
-1. 理解用户意图，确定目标人群和核心话题
-2. 用 web_search 搜索相关热点和数据（可选）
-3. 按 references/content-generation.md 规则生成标题 + 正文（800-1500字）
-4. 展示给用户确认
-5. 调用 bilibili_publish.py 脚本发布
-```
+内容生成由 **content-coordinator Agent** 负责，Skill 仅执行发布。Agent 生成好标题和正文后，直接调用本 Skill 脚本发布。
 
 ### 模式二：直接发布
 
 用户直接提供标题和正文，跳过生成步骤直接发布。
-
----
-
-## 内容生成规则（核心摘要）
-
-详见 `references/content-generation.md`，核心要点：
-
-- **字数**：正文 800-1500 字，标题 ≤40 字
-- **风格**：深度专栏，有逻辑有数据，面向理性用户
-- **结构**：引言 → 核心分析 → 干货内容 → 常见误区 → 结尾互动引导
-- **话题选择**：根据用户指定或自动从话题库选取
-- **B站合规**：生成前必须对照 `references/bilibili-rules.md`，禁止极限词、直接联系方式、站外导流
-- **禁止表情符号**：正文和标题中严禁出现任何 emoji / Unicode 表情
 
 ---
 
@@ -54,7 +25,7 @@ description: B站（哔哩哔哩）专栏自动发布助手。生成深度专栏
    - Profile: ~/.catpaw/bilibili_browser_profile
 2. 导航到 member.bilibili.com/platform/upload/text/new-edit
    ⚠️  注意：URL 是 new-edit，不是 edit
-3. 检测登录态 → 未登录则等待手动登录（120s）
+3. 检测登录态 → 未登录则等待手动登录（90s）
 4. 等待编辑器 iframe 加载（iframe[src*='read-editor']）
    - 轮询检测 iframe 内 textarea.title-input__inner 出现（最多 20s）
 5. 通过 frame 对象操作 iframe 内的元素：

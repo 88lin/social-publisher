@@ -56,11 +56,11 @@ def load_content_file(path: str) -> dict:
     return data
 
 
-async def wait_for_login(page: Page, timeout_ms: int = 120000) -> bool:
+async def wait_for_login(page: Page, timeout_ms: int = 90000) -> bool:
     """若当前在登录页，等待用户手动登录"""
     if "login" not in page.url and "passport" not in page.url:
         return True
-    print("[WARN] 未登录，请在弹出的浏览器窗口中手动登录（等待最多 120 秒）...")
+    print("[WARN] 未登录，请在弹出的浏览器窗口中手动登录（等待最多 90 秒）...")
     try:
         await page.wait_for_url(
             lambda url: "login" not in url and "passport" not in url,

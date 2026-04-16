@@ -107,12 +107,7 @@ python3 scripts/xianyu_publish.py \
 
 ## 违禁词处理
 
-自动替换以下敏感词：
-- 高仿 → 复刻
-- A货 → 正品
-- 全网最低 → 优惠价
-
-详见 `references/content-rules.md`
+违禁词替换由 **content-coordinator Agent** 在生成内容时负责处理，Skill 脚本直接接收已处理好的内容执行发布。详见 `references/content-rules.md`。
 
 ## 故障排除
 

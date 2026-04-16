@@ -15,6 +15,7 @@ import json
 import argparse
 from pathlib import Path
 from typing import Optional, List
+from playwright.async_api import async_playwright
 
 # ── 配置 ──────────────────────────────────────────────────────────────────────
 DEFAULT_PROFILE = os.path.expanduser("~/.catpaw/bilibili_browser_profile")

@@ -224,7 +224,7 @@ async def wait_for_login(page, timeout_ms=90000):
     """等待用户扫码登录"""
     if "login" not in page.url:
         return True
-    
+
     print("[WARN] 未登录，请在弹出的浏览器窗口中手动扫码登录（等待最多 90 秒）...")
     try:
         await page.wait_for_url(lambda url: "login" not in url, timeout=timeout_ms)

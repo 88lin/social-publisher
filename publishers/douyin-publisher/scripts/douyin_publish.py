@@ -106,7 +106,7 @@ def load_content_file(path: str) -> dict:
     return data
 
 
-async def wait_for_login(page: Page, timeout_ms: int = 120000) -> bool:
+async def wait_for_login(page: Page, timeout_ms: int = 90000) -> bool:
     """若当前在登录页，等待用户手动扫码登录"""
     # 抖音登录页特征：URL 含 login/passport，或页面含「扫码登录」文字
     current_url = page.url
@@ -126,7 +126,7 @@ async def wait_for_login(page: Page, timeout_ms: int = 120000) -> bool:
     if not is_login_page:
         return True
 
-    print("[WARN] 未登录，请在弹出的浏览器窗口中用抖音 APP 扫码登录（等待最多 120 秒）...")
+    print("[WARN] 未登录，请在弹出的浏览器窗口中用抖音 APP 扫码登录（等待最多 90 秒）...")
     print("[WARN] 提示：首次运行需要扫码，之后登录态会保存，无需再次扫码")
     try:
         await page.wait_for_function(
